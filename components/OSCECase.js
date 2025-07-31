@@ -14,8 +14,8 @@ Only respond as the patient would. Answer only what's asked. Don’t give away d
 Once the candidate finishes, respond: "Thank you, doctor."`;
 
 export default function OSCECase() {
-  const [readingTime, setReadingTime] = useState(120);
-  const [interactionTime, setInteractionTime] = useState(480);
+  const [readingTime, setReadingTime] = useState(10);
+  const [interactionTime, setInteractionTime] = useState(10);
   const [stage, setStage] = useState('reading');
   const [messages, setMessages] = useState([
     { role: 'system', content: patientPrompt },
